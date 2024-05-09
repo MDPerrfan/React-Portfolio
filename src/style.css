@@ -246,7 +246,7 @@ button:focus {
 .home-section {
     padding-bottom: 30px !important;
     padding-top: 30px !important;
-    background-color: rgb(232, 253, 246);
+    background-color: rgba(20, 32, 44, 0.941);
     min-height: 100vh;
 }
 

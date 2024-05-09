@@ -1,14 +1,15 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
-
+import { AiOutlineApi } from "react-icons/ai";
+import { GiAk47 } from "react-icons/gi";
+import { AiTwotoneRocket } from "react-icons/ai";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify",color:"black" }}>
-            Hi Everyone, I am <span className="coral">Parves </span>
+            Hi Everyone, I am <strong className="coral">Parves </strong>
             from <span className="coral"> Chittagong, Bangladesh</span>
             <br />
             I am currently a CS Student.
@@ -16,20 +17,20 @@ function AboutCard() {
             At Port City International University
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Beyond coding, I find joy in various activities:!
           </p>
           <ul style={{color:"black"}}>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+            <GiAk47 /> Gaming
             </li>
             <li className="about-activity">
-              <ImPointRight /> Exploring new Techs
+            <AiOutlineApi />Tech Exploration
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+            <AiTwotoneRocket /> Traveling
             </li>
           </ul>
-
+          <br/>
           <p style={{ color: "black" }}>
           "The best thing about a boolean is even if you are wrong, you are only off by a bit."{" "}
           </p>
