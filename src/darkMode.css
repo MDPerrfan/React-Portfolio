@@ -1,0 +1,117 @@
+@import '~boxicons/css/boxicons.min.css';
+
+/* Dark Theme */
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Navbar Section */
+
+.navbar {
+    background-color: #212121 !important;
+    color: #ffffff !important;
+}
+
+.navbar-toggler span {
+    background-color: #f04006 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-item a::after {
+    background: #f04006;
+}
+
+
+/* Home section */
+
+.home-section {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #212121;
+    color: #ffffff !important;
+}
+
+
+/* Projects */
+
+.project-section {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.project-card-view {
+    box-shadow: 0 3px 4px 2px rgba(255, 255, 255, 0.459) !important;
+}
+
+.project-heading {
+    color: #ffffff;
+}
+
+
+/* About */
+
+.about-section {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.tech-icons {
+    border: 1.7px solid rgba(255, 255, 255, 0.819) !important;
+    box-shadow: 4px 5px 4px 3px rgba(255, 255, 255, 0.137) !important;
+}
+
+
+/* Resume */
+
+.resume-section {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.resume .resume-item {
+    border-left: 2px solid #ffffff;
+}
+
+
+/* Contact Section */
+
+.contact_section {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.contact_card {
+    background-color: #212121;
+    border: 1px solid #ffffff;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888888;
+}
