@@ -33,13 +33,13 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          <span style={{color:"#45494c"}}>Developing </span> <strong className="coral">Skills in </strong>
+          <span style={{color:"white"}}>Developing </span> <strong className="coral">Skills in </strong>
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading"style={{color:"#45494c"}}>
-          <strong className="coral">Tools</strong><span style={{color:"#45494c"}}> I use</span>
+        <h1 className="project-heading">
+          <strong className="coral">Tools</strong><span style={{color:"white"}}> I use</span>
         </h1>
         <Toolstack />
         <Github />

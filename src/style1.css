@@ -7,12 +7,6 @@
 }
  */
 
-:root {
-    --bg-color: rgb(16, 24, 37);
-    --txt-color: rgb(218, 218, 218);
-    --bg2-color: rgb(15, 21, 32);
-}
-
 .coral {
     color: coral;
 }
@@ -252,13 +246,13 @@ button:focus {
 .home-section {
     padding-bottom: 30px !important;
     padding-top: 30px !important;
-    background-color: var(--bg-color);
+    background-color: rgb(232, 253, 246);
     min-height: 100vh;
 }
 
 .home-content {
     padding: 9rem 0 2rem !important;
-    color: var(--txt-color);
+    color: rgb(60, 55, 55);
     text-align: left;
 }
 
@@ -278,7 +272,7 @@ button:focus {
 
 .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: var(--txt-color) !important;
+    color: #423f3e !important;
     font-weight: 600 !important;
 }
 
@@ -352,7 +346,7 @@ button:focus {
 }
 
 .home-about-section {
-    background-color: var(--bg2-color);
+    background-color: aliceblue;
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
@@ -367,7 +361,7 @@ button:focus {
 }
 
 .home-about-description {
-    color: var(--txt-color) !important;
+    color: rgb(31, 29, 29) !important;
     padding-top: 100px !important;
     padding-bottom: 20px !important;
     text-align: center;
@@ -382,7 +376,7 @@ button:focus {
 .home-about-social {
     text-align: center !important;
     padding-top: 25px;
-    color: var(--txt-color) !important;
+    color: rgb(39, 37, 37) !important;
 }
 
 .home-about-social-links {
@@ -484,7 +478,6 @@ button:focus {
 /* --------- */
 
 .project-section {
-    background-color: var(--bg-color);
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
@@ -500,7 +493,7 @@ button:focus {
 
 .project-card-view {
     box-shadow: 0 3px 4px 2px rgba(136, 75, 53, 0.459) !important;
-    color: var(--txt-color) !important;
+    color: rgb(45, 41, 41) !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
@@ -591,7 +584,6 @@ button:focus {
 /* --------- */
 
 .about-section {
-    background-color: var(--bg-color);
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
@@ -631,7 +623,7 @@ button:focus {
 
 .quote-card-view {
     border: none !important;
-    color: var(--txt-color)!important;
+    color: rgb(48, 43, 43) !important;
     background-color: transparent !important;
 }
 
@@ -657,7 +649,6 @@ button:focus {
 /* --------- */
 
 .resume-section {
-    background-color: var(--bg-color);
     position: relative !important;
     padding-top: 110px !important;
     padding-bottom: 30px !important;
@@ -810,8 +801,7 @@ button:focus {
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
-    background-color: var(--bg2-color);
-    color: var(--txt-color);
+    background-color: rgb(236, 255, 248);
 }
 
 .contact_container {
@@ -836,11 +826,11 @@ button:focus {
 }
 
 .contact_card {
-    background-color: rgb(29, 35, 44);
+    background-color: rgb(242, 251, 255);
     padding: .8rem;
     text-align: center;
     border-radius: .75rem;
-    border: 1px solid rgb(31, 32, 32);
+    border: 1px solid rgb(131, 133, 133);
 }
 
 .c-right {
@@ -863,7 +853,7 @@ button:focus {
     padding: 0.3em;
     outline: none;
     border: 1px solid rgb(131, 133, 133);
-    background-color: rgb(29, 35, 44);
+    background-color: rgb(242, 251, 255);
     border-radius: 8px;
     font-size: 16px;
 }

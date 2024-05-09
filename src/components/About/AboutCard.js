@@ -8,7 +8,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify",color:"black" }}>
+          <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <strong className="coral">Parves </strong>
             from <span className="coral"> Chittagong, Bangladesh</span>
             <br />
@@ -19,7 +19,7 @@ function AboutCard() {
             <br />
             Beyond coding, I find joy in various activities:!
           </p>
-          <ul style={{color:"black"}}>
+          <ul>
             <li className="about-activity">
             <GiAk47 /> Gaming
             </li>
@@ -30,8 +30,8 @@ function AboutCard() {
             <AiTwotoneRocket /> Traveling
             </li>
           </ul>
-          <br/>
-          <p style={{ color: "black" }}>
+
+          <p>
           "The best thing about a boolean is even if you are wrong, you are only off by a bit."{" "}
           </p>
           <footer className="blockquote-footer">Anonymous</footer>

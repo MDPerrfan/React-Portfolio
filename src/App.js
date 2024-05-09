@@ -13,7 +13,8 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
-import "./style.css";
+/* import "./style1.css"; */
+import "./style.css"
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -30,8 +31,8 @@ function App() {
   return (
     <Router>
     <Preloader load={load} />
-    <div className="App" id={load ? "no-scroll" : "scroll"}>
-      <Navbar />
+    <div className="App"id={load ? "no-scroll" : "scroll"}>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Projects />} />
