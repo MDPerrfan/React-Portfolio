@@ -246,7 +246,7 @@ button:focus {
 .home-section {
     padding-bottom: 30px !important;
     padding-top: 30px !important;
-    background-color: rgb(232, 253, 246);
+    background-color: rgb(243, 251, 248);
     min-height: 100vh;
 }
 
@@ -346,7 +346,7 @@ button:focus {
 }
 
 .home-about-section {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
@@ -801,7 +801,7 @@ button:focus {
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
-    background-color: rgb(236, 255, 248);
+    background-color: rgb(255, 255, 255);
 }
 
 .contact_container {

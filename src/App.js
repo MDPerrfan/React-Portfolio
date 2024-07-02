@@ -14,7 +14,7 @@ import {
   Navigate
 } from "react-router-dom";
 /* import "./style1.css"; */
-import "./style.css"
+import "./style1.css"
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
