@@ -479,7 +479,7 @@ button:focus {
 
 .project-section {
     position: relative !important;
-    padding-top: 150px !important;
+    padding-top: 120px !important;
     padding-bottom: 30px !important;
 }
 
@@ -798,19 +798,14 @@ button:focus {
 /*  contact section  */
 
 .contact_section {
-    position: relative !important;
-    padding-top: 150px !important;
+    padding-top: 140px !important;
     padding-bottom: 30px !important;
     background-color: rgb(255, 255, 255);
+    min-height: 94vh;
 }
 
-.contact_container {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    column-gap: 8rem;
-    padding-bottom: 3rem;
-}
+
+/* 
 
 .contact_card-icon {
     font-size: 2rem;
@@ -833,31 +828,6 @@ button:focus {
     border: 1px solid rgb(131, 133, 133);
 }
 
-.c-right {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-}
-
-.c-right>form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-}
-
-.c-right .user {
-    width: 20rem;
-    height: 5rem;
-    padding: 0.3em;
-    outline: none;
-    border: 1px solid rgb(131, 133, 133);
-    background-color: rgb(242, 251, 255);
-    border-radius: 8px;
-    font-size: 16px;
-}
-
 textarea {
     height: 9rem!important;
 }
@@ -869,18 +839,278 @@ textarea {
     }
     .contact_card {
         margin-bottom: 2rem;
-        /* Add some spacing between cards */
+
+}
+.contact_card {
+    padding: .1rem;
+    font-size: 0.9rem;
+    border-radius: .3rem;
+}
+.contact_card h3 {
+    font-size: 1.2rem;
+
+
+}
+*/
+
+
+/* contact */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    padding-bottom: 3rem;
+    column-gap: 8rem;
+}
+
+.contact_card .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact_card .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.contact_card .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.contact_card .card:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 25, 0.05)
+}
+
+.contact_card .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.contact_card .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.contact_card .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+}
+
+.contact_card .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.contact_card .card:hover .contentBx {
+    height: 210px;
+}
+
+.contact_card .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}
+
+.contact_card .card .contentBx .size,
+.contact_card .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contact_card .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.contact_card .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.contact_card .card .contentBx .size h3,
+.contact_card .card .contentBx .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.contact_card .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_card .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 4rem;
+}
+
+.contact_card .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+
+/* Styles for larger screens */
+
+@media(max-width: 1250px) {
+    .contact_container {
+        column-gap: 2rem;
     }
-    .c-right .user {
-        width: 16rem;
-    }
-    .contact_card {
-        padding: .1rem;
-        font-size: 0.9rem;
-        border-radius: .3rem;
-    }
-    .contact_card h3 {
-        font-size: 1.2rem;
-        /* Decreased size for responsive */
+    .contact_card .card {
+        width: 240px;
+        height: 400px;
     }
 }
+
+@media (min-width: 1024px) {
+    .contact_card .card {
+        width: 320px;
+        height: 450px;
+    }
+    .contact_card .card .imgBx img {
+        width: 270px;
+    }
+}
+
+
+/* Styles for tablets */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .contact_card .card {
+        width: 240px;
+        height: 400px;
+    }
+    .contact_card .card .imgBx img {
+        width: 230px;
+    }
+}
+
+
+/* Styles for mobile devices */
+
+@media (max-width: 768px) {
+    .contact_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact_card .card {
+        height: 350px;
+    }
+    .contact_card .card .imgBx {
+        height: auto;
+        top: 0;
+        transform: translateY(0%);
+    }
+    .contact_card .card .imgBx img {
+        width: 65%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .contact_card .card .contentBx {
+        height: auto;
+        padding: 20px 10px;
+    }
+    .contact_card .card:hover .contentBx {
+        height: auto;
+    }
+    .contact_card .card .contentBx a {
+        margin-top: 20px;
+        transform: translateY(0px);
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+}
+
+
+/* Adjustments for very small screens */
+
+
+/* 
+@media (max-width: 480px) {
+    .contact_card .card {
+        width: 100%;
+    }
+    .contact_card .card .imgBx img {
+        width: 70%;
+    }
+    .contact_card .card .contentBx {
+        padding: 15px 5px;
+    }
+    .contact_card .card .contentBx a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+} */
