@@ -5,7 +5,7 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -23,8 +23,8 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href=""
-                style={{ color: "white" }}
+                  href="https://github.com/MDPerrfan"
+                  style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -33,18 +33,18 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href=""
-                style={{ color: "white" }}
+                  href="https://www.facebook.com/mdparves.erfan.3/"
+                  style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <FaFacebookF />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href=""
-                style={{ color: "white" }}
+                  href="https://www.linkedin.com/in/mohammed-parves-6635212aa"
+                  style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -53,8 +53,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href=""
-                style={{ color: "white" }}
+                  href="https://www.instagram.com/errfan51?igsh=MXVhZWlwZjQ4NXVteA=="
+                  style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >

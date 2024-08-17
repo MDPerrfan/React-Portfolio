@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import whatsapp from "../../Assets/—Pngtree—whatsapp icon whatsapp logo_3584844.png"
 import mssngr from "../../Assets/mssngr.png"
+import mail from "../../Assets/mail.png"
+
 const Contact = () => {
     const form = useRef();
     const [done, setDone] = useState(false);
@@ -37,11 +39,11 @@ const Contact = () => {
             <div className="contact_card">
                 <div className="card">
                     <div className="imgBx">
-                        <img src={mssngr} />
+                        <img src={mail} style={{width:"66%"}}/>
                     </div>
                     <div className="contentBx">
-                        <h2>Messenger</h2>
-                        <a href="https://m.me/mdparves.erfan.3" target="blank">Write me
+                        <h2>Mail</h2>
+                        <a href="mailto:mdperrfan@gmail.com" target="blank">Write me
                             <i className="bx bx-right-arrow-alt contact_button-icon"></i>
                         </a>
                     </div>

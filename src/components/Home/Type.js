@@ -7,6 +7,8 @@ function Type() {
             {
                 strings: [
                     "Aspiring Developer",
+                    "Ecophile",
+                    "Techie",
                     "Teacher",
                 ],
                 autoStart: true,

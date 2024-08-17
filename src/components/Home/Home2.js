@@ -4,10 +4,10 @@ import myImg from "../../Assets/aboutprofile.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineFacebook,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -71,17 +71,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/mdparves.erfan.3/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaFacebookF/>
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mohammed-parves-6635212aa"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -91,7 +91,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/errfan51?igsh=MXVhZWlwZjQ4NXVteA=="
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
