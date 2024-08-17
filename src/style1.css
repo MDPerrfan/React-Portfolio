@@ -521,50 +521,6 @@ button:focus {
     box-shadow: 0 3px 3px 4px rgba(178, 96, 64, 0.561) !important;
 }
 
-
-/* .blog-card {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    height: auto !important;
-}
-
-.blog-card-view {
-    background-color: transparent !important;
-    box-shadow: 0 3px 3px 2px rgba(171, 91, 64, 0.459) !important;
-    color: white !important;
-    transition: all 0.5s ease 0s !important;
-    height: 100% !important;
-}
-
-.blog-link {
-    color: white !important;
-    text-decoration: none !important;
-}
-
-.blog-link:hover {
-    cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-    transform: scale(1.02) !important;
-    overflow: hidden !important;
-    box-shadow: 0 3px 3px 5px rgba(199, 102, 69, 0.65) !important;
-}
-
-.card-img-top {
-    padding: 20px !important;
-    opacity: 0.8 !important;
-    border-radius: 10px !important;
-}
-
-.blog-img {
-    padding: 0px !important;
-    opacity: 0.8 !important;
-    border-radius: 0px !important;
-} */
-
 .btn-primary {
     color: #fff !important;
     background-color: #eb5031 !important;
@@ -1031,6 +987,12 @@ textarea {
 /* Styles for mobile devices */
 
 @media (max-width: 768px) {
+    .home-content {
+        padding: 0 !important;
+    }
+    .about-section {
+        padding: 55px !important;
+    }
     .contact_container {
         display: flex;
         justify-content: center;
