@@ -1,34 +1,9 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 import whatsapp from "../../Assets/—Pngtree—whatsapp icon whatsapp logo_3584844.png"
 import mssngr from "../../Assets/mssngr.png"
 import mail from "../../Assets/mail.png"
 
-const Contact = () => {
-    const form = useRef();
-    const [done, setDone] = useState(false);
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm(
-                "service_06ucpza",
-                "template_g5gp2fs",
-                form.current,
-                "j0GQwCT3mcYeu2K6h"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    setDone(true);
-                    form.current.reset();
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-    };
-
+function Contact(){
     return (
         <section className="contact_section">
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", color: "coral" }}>
@@ -39,7 +14,7 @@ const Contact = () => {
             <div className="contact_card">
                 <div className="card">
                     <div className="imgBx">
-                        <img src={mail} style={{width:"66%"}}/>
+                        <img src={mail} style={{width:"66%"}} alt="mail"/>
                     </div>
                     <div className="contentBx">
                         <h2>Mail</h2>
@@ -52,7 +27,7 @@ const Contact = () => {
             <div className="contact_card">
                 <div className="card">
                     <div className="imgBx">
-                        <img src={mssngr} />
+                        <img src={mssngr} alt="messenger"/>
                     </div>
                     <div className="contentBx">
                         <h2>Messenger</h2>
@@ -65,7 +40,7 @@ const Contact = () => {
             <div className="contact_card">
                 <div className="card">
                     <div className="imgBx">
-                        <img src={whatsapp} />
+                        <img src={whatsapp} alt="Whatsapp"/>
                     </div>
                     <div className="contentBx">
                         <h2>WhatsApp</h2>

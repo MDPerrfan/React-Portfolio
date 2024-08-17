@@ -11,13 +11,7 @@ import {
   DiCss3Full,
   DiHtml5
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
+
 
 
 function Techstack() {
