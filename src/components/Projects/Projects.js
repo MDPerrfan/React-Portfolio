@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import textcraft from "../../Assets/Projects/TextCraft.png";
 import notebook from "../../Assets/Projects/notebook.png";
 import games from "../../Assets/Projects/RPSGame.png";
+import resto from "../../Assets/Projects/Screenshot_4.jpg"
 
 function Projects() {
   return (
@@ -18,6 +19,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={resto}
+              isBlog={false}
+              title="Resto"
+              description="Browse through our detailed menu with high-quality images and descriptions of each dish. Whether you’re looking for something specific or just exploring, our menu is easy to navigate.Order your favorite meals directly from the website. Customize your order with special instructions, choose between pick-up or delivery, and track your order status in real-time."
+              ghLink="https://github.com/MDPerrfan/Resto-mern"
+              demoLink="https://restomern.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={textcraft}
               isBlog={false}
               title="TextCraft"
@@ -26,7 +37,6 @@ function Projects() {
               demoLink="https://easytextcraft.netlify.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={notebook}
