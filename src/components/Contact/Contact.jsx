@@ -44,7 +44,7 @@ function Contact(){
                     </div>
                     <div className="contentBx">
                         <h2>WhatsApp</h2>
-                        <a href="https://wa.me/01643833176" target="blank">Write me
+                        <a href="https://wa.me/+8801643833176" target="blank">Write me
                             <i className="bx bx-right-arrow-alt contact_button-icon"></i>
                         </a>
                     </div>
