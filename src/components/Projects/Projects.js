@@ -5,6 +5,7 @@ import textcraft from "../../Assets/Projects/TextCraft.png";
 import notebook from "../../Assets/Projects/notebook.png";
 import games from "../../Assets/Projects/RPSGame.png";
 import resto from "../../Assets/Projects/Screenshot_4.jpg"
+import chatt from "../../Assets/Projects/Screenshot_2.jpg"
 
 function Projects() {
   return (
@@ -17,6 +18,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatt}
+              isBlog={false}
+              title="P-Chatt"
+              description="Our chat app, built using the MERN stack, provides a seamless messaging experience with Firebase authentication. Users can sign up with their email and engage in real-time chats. The app supports media sharing, allowing users to easily exchange photos, videos, and other files within their conversations. With a secure and user-friendly interface..."
+              ghLink="https://github.com/MDPerrfan/chat-app"
+              demoLink="https://p-chatt.netlify.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={resto}
