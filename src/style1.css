@@ -254,48 +254,6 @@ button:focus {
 
 /* --------- */
 
-.home-header {
-    padding-top: 80px !important;
-}
-
-.home-section {
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
-    background-color: rgb(243, 251, 248);
-    min-height: 100vh;
-}
-
-.home-content {
-    padding: 9rem 0 2rem !important;
-    color: rgb(60, 55, 55);
-    text-align: left;
-}
-
-.heading {
-    font-size: 2.4em !important;
-    padding-left: 50px !important;
-}
-
-.heading-name {
-    font-size: 2.5em !important;
-    padding-left: 45px !important;
-}
-
-.main-name {
-    color: #f04006;
-}
-
-.Typewriter__wrapper {
-    font-size: 2.2em !important;
-    color: #423f3e !important;
-    font-weight: 600 !important;
-}
-
-.Typewriter__cursor {
-    font-size: 2.4em !important;
-    color: #f04006 !important;
-}
-
 .wave {
     animation-name: wave-animation;
     /* Refers to the name of your @keyframes element below */
@@ -368,11 +326,8 @@ button:focus {
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     justify-content: center!important;
+    align-items: center;
 }
 
 .home-about-description {
@@ -507,13 +462,39 @@ button:focus {
 }
 
 .project-card-view {
+    min-width: 300px;
+    transition: all 0.5s ease 0s !important;
+    overflow: hidden;
+    /* To hide overflow if content exceeds */
+    display: flex;
+    flex-direction: column;
+    /* Ensure proper alignment */
+    justify-content: space-between;
+    /* Space out elements inside the card */
+}
+
+.project-card-img {
+    height: 150px;
+    /* Set fixed height for image */
+    object-fit: cover;
+    /* Ensure image fits within the given area */
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* .project-card-view {
     box-shadow: 0 3px 4px 2px rgba(136, 75, 53, 0.459) !important;
     color: rgb(45, 41, 41) !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
     height: 100% !important;
-}
+} */
 
 .project-card-view:hover {
     transform: scale(1.02) !important;

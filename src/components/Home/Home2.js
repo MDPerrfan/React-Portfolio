@@ -1,14 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/aboutprofile.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 function Home2() {
+  const {portfolioData}=useSelector((state)=>state.root)
+  const {intros} = portfolioData;
+  const {contacts} = portfolioData;
+  const{github,linkedin,facebook}=contacts[0];
+  const{aboutImageUrl}=intros[0];
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -47,7 +52,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img style={{borderRadius:"50%"}} src={myImg} className="img-fluid" alt="avatar" />
+              <img style={{borderRadius:"50%"}} src={aboutImageUrl} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -60,7 +65,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/MDPerrfan"
+                  href={github}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -70,7 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.facebook.com/mdparves.erfan.3/"
+                  href={facebook}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -80,7 +85,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/mohammed-parves-6635212aa"
+                  href={linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

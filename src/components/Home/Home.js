@@ -1,18 +1,27 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/Profile_main.jpeg";
 import Home2 from "./Home2";
 import Type from "./Type";
-
+import { useSelector } from "react-redux";
+import Preloader from "../Pre";
+import './Home.css';
 function Home() {
+  const {loading,portfolioData}=useSelector((state)=>state.root)
+  if (loading || !portfolioData) {
+    return <Preloader/>; 
+  }
+  const {intros} = portfolioData;
+  const{firstName,lastName,mainProfileUrl,welcomeText}=intros[0];
+
   return (
-    <section >
+    <>
+    {portfolioData?<section >
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row className="row">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+               {welcomeText}{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -20,7 +29,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Mohammed Parves</strong>
+                <strong className="main-name"> {firstName} {lastName}</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left"}}>
                 <Type />
@@ -34,40 +43,18 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20,display:"flex",justifyContent:"center" }}>
             <img
-              src={homeLogo}
+              src={mainProfileUrl}
               alt="home pic"
               className="img-fluid"
-              style={{
-                marginTop:"6rem",
-                maxHeight: "70%",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                boxShadow: "inset 0 0 0 9px rgb(255 255 255/ 30%)",
-                order: 1,
-                justifySelf: "center",
-                animation: "profile_animate 8s ease-in-out infinite 1s"
-              }}
+              id="mainprofile"
               />
-              <style>{`
-                @keyframes profile_animate {
-                  0% {
-                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-                  }
-                  50% {
-                    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-                  }
-                  100% {
-                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-                  }
-                }
-              `}</style>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
-    </section>
+      <Home2 intros={intros}/>
+    </section>:null}
+    </>
   );
 }
 
